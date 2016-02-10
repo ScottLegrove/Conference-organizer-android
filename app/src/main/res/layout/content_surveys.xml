@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_surveys" tools:context="com.scott.assignment1.SurveysActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Is this your first conference?"
+            android:id="@+id/textViewQuestion1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:id="@+id/radioButtonYesQuestion1"
+            android:layout_below="@+id/textViewQuestion1"
+            android:layout_alignParentStart="true"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:id="@+id/radioButtonNoQuestion1"
+            android:layout_below="@+id/textViewQuestion1"
+            android:layout_toEndOf="@+id/radioButtonYesQuestion1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:id="@+id/radioButtonYesQuestion2"
+            android:layout_marginTop="82dp"
+            android:layout_below="@+id/radioButtonYesQuestion1"
+            android:layout_alignStart="@+id/radioButtonYesQuestion1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:id="@+id/radioButtonNoQuestion2"
+            android:layout_alignTop="@+id/radioButtonYesQuestion2"
+            android:layout_toEndOf="@+id/radioButtonYesQuestion2"
+            android:checked="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Are you currently employed?"
+            android:id="@+id/textViewQuestion2"
+            android:layout_above="@+id/radioButtonNoQuestion2"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Would you attend again?"
+            android:id="@+id/textViewQuestion3"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:id="@+id/radioButtonYesQuestion3"
+            android:layout_below="@+id/textViewQuestion3"
+            android:layout_alignParentStart="true"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:id="@+id/radioButtonNoQeustion3"
+            android:layout_below="@+id/textViewQuestion3"
+            android:layout_toEndOf="@+id/radioButtonYesQuestion3"
+            android:checked="false" />
+
+        <Button
+            style="@style/OrangeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/btnSubmitSurvey"
+            android:layout_below="@+id/radioButtonNoQeustion3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="79dp" />
+    </RelativeLayout>
+</RelativeLayout>

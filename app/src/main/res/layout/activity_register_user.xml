@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.scott.assignment1.RegisterUserActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editTextRegisterUserEmail"
+        android:layout_alignBottom="@+id/textViewRegisterEmailLabel"
+        android:layout_alignStart="@+id/editTextRegisterUserPassword" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextRegisterUserPassword"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/editTextRegisterUserEmail"
+        android:layout_toEndOf="@+id/textViewRegisterPasswordLabel" />
+
+    <Button
+        style="@style/OrangeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/btnRegisterSubmit"
+        android:layout_below="@+id/editTextRegisterUserPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="108dp"
+        android:onClick="registerUser" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Email :"
+        android:id="@+id/textViewRegisterEmailLabel"
+        android:layout_marginTop="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Password :"
+        android:id="@+id/textViewRegisterPasswordLabel"
+        android:layout_alignBottom="@+id/editTextRegisterUserPassword"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
